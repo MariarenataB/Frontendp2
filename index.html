@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleta de Altura e Gênero</title>
+    <script src="aula.js"></script>
+</head>
+<body>
+    <h2>Coleta de Dados: Altura e Gênero</h2>
+    <label for="altura">Altura (m): </label>
+    <input type="number" id="altura" step="0.01" min="0" required>
+    
+    <label for="genero">Gênero: </label>
+    <select id="genero">
+        <option value="Masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+    </select>
+
+    <button onclick="adicionarPessoa()">Adicionar</button>
+
+    <p id="status">Insira os dados de 15 pessoas.</p>
+
+    <h3>Resultados:</h3>
+    <div id="resultado"></div>
+</body>
+</html>
